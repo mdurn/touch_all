@@ -1,4 +1,10 @@
 touch_all
 =========
 
-Touch files in path recursively
+Touch paths recursively.
+
+* Usage:
+
+  ```bash
+    touch_all path1 [ path2 ... ]
+  ```
