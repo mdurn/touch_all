@@ -1,0 +1,11 @@
+#!/bin/bash
+die () {
+  echo -e >&2 "$@"
+  exit 1
+}
+
+[ "$#" -gt 0 ] || die "usage:\ntouch_all path1 [ path2 ... ]"
+
+for arg in "$@"; do
+  find "$arg" -exec echo {} \;
+done
